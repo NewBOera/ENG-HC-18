@@ -1,0 +1,17 @@
+.input-with-icon {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.input-with-icon .icon {
+   position: absolute;
+   left: 10px;
+   width: 20px;
+   height: 15px;
+}
+
+.input-with-icon input {
+   padding-left: 35px;
+   /* Ajusta este valor según el tamaño de la imagen */
+}

@@ -1,0 +1,72 @@
+html,
+body {
+   scroll-behavior: smooth;
+}
+
+.overflow::-webkit-scrollbar {
+   width: 8px;
+}
+
+.overflow::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+.bg-hero {
+   background-image: url(/images/hero_bg.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+}
+
+.bg-card1 {
+   background-image: url(/images/cards/hotel1.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 20;
+}
+
+.bg-card2 {
+   background-image: url(/images/cards/hotel2.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+}
+
+.bg-card3 {
+   background-image: url(/images/cards/hotel3.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+}
+
+.bg-card4 {
+   background-image: url(/images/cards/hotel4.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+}
+
+.bg-card5 {
+   background-image: url(/images/cards/hotel5.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+}
+
+.bg-form {
+   position: relative;
+   background-image: url(/images/Rectangle\ 5.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: ; /* Combina el gradiente con la imagen */
+}
