@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title></title>
       <!-- ! Tailwind config -->
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
@@ -20,6 +20,11 @@
             },
          };
       </script>
+      <link
+         rel="shortcut icon"
+         href="images/logos/favicon.ico"
+         type="image/x-icon"
+      />
 
       <!--!Swiper-->
       <link
@@ -90,10 +95,12 @@
                id="menu-icon"
             />
             <div class="flex items-center gap-2">
-               <div
-                  class="bg-[#D9D9D9] flex justify-center items-center w-[50px] h-[50px]"
-               >
-                  <img class="object-contain" src="" alt="Logo" />
+               <div class="flex justify-center items-center w-[30px] h-[30px]">
+                  <img
+                     class="object-contain"
+                     src="images/logos/Logo.png"
+                     alt="Logo"
+                  />
                </div>
 
                <div class="text-white font-Playfair font-medium">
@@ -126,10 +133,10 @@
          >
             <div class="flex items-center grow basis-0 gap-10">
                <div class="font-normal text-lg flex items-center gap-4">
-                  <a href="#contact-section"
+                  <a href="/index.html"
                      ><img
-                        class="object-contain w-10"
-                        src="./"
+                        class="object-contain w-[30px]"
+                        src="images/logos/Logo.png"
                         alt="Logo"
                         title="{CHANGE NAME}"
                   /></a>
@@ -739,7 +746,7 @@
                         onclick="sendSubscribeForm('contact-us-form')"
                         class="bg-[#F2E206] text-center cursor-pointer mt-3 text-[#010873] text-[20px]/[24px] font-bold p-2 rounded-[15px]"
                      >
-                        CONTACT US
+                        CONTACT ME
                      </a>
 
                      <div
@@ -1276,7 +1283,7 @@
                         onclick="sendSubscribeForm('always-form')"
                         class="bg-[#F2E206] md:text-[20px]/[24px] text-center text-[#010873] font-bold rounded-[15px] font-DM p-1"
                      >
-                        CONTACT US
+                        CONTACT ME
                      </a>
                   </form>
                </div>
@@ -1310,17 +1317,32 @@
                   <a href="./terms.html" class="text-[#F2CB04] font-DM"
                      >Terms & Conditions
                   </a>
-                  <span class="text-[#F2CB04] font-DM">FAQs </span>
-                  <span class="text-[#F2CB04] font-DM">Cookie Policy </span>
-                  <span
-                     class="text-[#F2CB04] font-DM"
-                     onclick="clickModal('privacy-modal')"
-                     >Privacy Notice</span
+                  <a href="./privacy.html" class="text-[#F2CB04] font-DM"
+                     >Privacy Policy</a
                   >
-                  <span class="text-[#F2CB04] font-DM">Vouchers </span>
-                  <span class="text-[#F2CB04] font-DM"
-                     >Cookie Preferences
-                  </span>
+                  <a href="./cancellation.html" class="text-[#F2CB04] font-DM"
+                     >Cancellation Policy
+                  </a>
+                  <a href="./transparency.html" class="text-[#F2CB04] font-DM"
+                     >Transparency disclosure
+                  </a>
+                  <a
+                     href="https://www.gambleaware.org/"
+                     target="_blank"
+                     rel="noopener"
+                     class="text-[#F2CB04] font-DM"
+                     >Gambling disclaimer
+                  </a>
+                  <a href="./legal.html" class="text-[#F2CB04] font-DM"
+                     >Legal disclosure
+                  </a>
+                  <a href="./contact.html" class="text-[#F2CB04] font-DM"
+                     >Contact Us
+                  </a>
+                  <a href="./cookies.html" class="text-[#F2CB04] font-DM"
+                     >Cookie Policy
+                  </a>
+                  <a href="./faqs.html" class="text-[#F2CB04] font-DM">FAQs </a>
                </div>
 
                <div
@@ -1366,13 +1388,15 @@
                class="flex flex-col items-center lg:flex-row justify-between gap-10"
             >
                <div class="flex flex-col gap-5 lg:w-[40%]">
-                  <span class="text-white lg:text-xl font-DM font-normal">
+                  <div
+                     class="text-white text-center lg:text-left lg:text-xl font-DM font-normal"
+                  >
                      © 2024 All Rights Reserved <br />
                      {nameofthepage}
-                  </span>
+                  </div>
                   <div class="flex lg:justify-start justify-center">
                      <img
-                        src="images/logos/MasterCard_Logo.svg 1.png"
+                        src="images/logos/Logo.png"
                         class="w-[50px] h-[50px]"
                         alt=""
                      />
@@ -1399,210 +1423,6 @@
             </div>
          </div>
       </footer>
-
-      <!-- ! Modals -->
-      <!-- ? Terms and Conditions Modal -->
-      <section
-         id="terms-modal"
-         class="bg-[#00000088] font-[Inter] flex items-center justify-center min-h-screen absolute z-50 hidden"
-      >
-         <div
-            class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
-         >
-            <div
-               class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
-            >
-               <div class="relative flex items-end">
-                  <img
-                     class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
-                     onclick="clickModal('terms-modal')"
-                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
-                     alt=""
-                  />
-                  <div class="bg-primarybg w-full">
-                     <h2
-                        class="text-base text-center p-4 font-bold text-white w-full"
-                     >
-                        Terms and Conditions
-                     </h2>
-                  </div>
-               </div>
-
-               <article
-                  class="overflow-y-auto overflow-x-hidden h-96 p-5 text-xs flex flex-col gap-4"
-               >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  natus, maiores numquam dicta, at unde sunt est adipisci,
-                  nesciunt praesentium quam. Sint similique quidem at, earum
-                  reiciendis omnis doloremque explicabo. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Expedita, porro perferendis
-                  quos quam corrupti hic debitis sunt ullam, illo incidunt iste
-                  obcaecati harum nisi omnis et quaerat fugit tempore
-                  praesentium! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam amet corrupti nisi sed. Ea maxime
-                  dolor consectetur quam esse quae natus quod error, dolorum
-                  voluptate nam excepturi eveniet. Repudiandae, quia. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  natus, maiores numquam dicta, at unde sunt est adipisci,
-                  nesciunt praesentium quam. Sint similique quidem at, earum
-                  reiciendis omnis doloremque explicabo. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Expedita, porro perferendis
-                  quos quam corrupti hic debitis sunt ullam, illo incidunt iste
-                  obcaecati harum nisi omnis et quaerat fugit tempore
-                  praesentium! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam amet corrupti nisi sed. Ea maxime
-                  dolor consectetur quam esse quae natus quod error, dolorum
-                  voluptate nam excepturi eveniet. Repudiandae, quia. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  natus, maiores numquam dicta, at unde sunt est adipisci,
-                  nesciunt praesentium quam. Sint similique quidem at, earum
-                  reiciendis omnis doloremque explicabo. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Expedita, porro perferendis
-                  quos quam corrupti hic debitis sunt ullam, illo incidunt iste
-                  obcaecati harum nisi omnis et quaerat fugit tempore
-                  praesentium! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam amet corrupti nisi sed. Ea maxime
-                  dolor consectetur quam esse quae natus quod error, dolorum
-                  voluptate nam excepturi eveniet. Repudiandae, quia. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  natus, maiores numquam dicta, at unde sunt est adipisci,
-                  nesciunt praesentium quam. Sint similique quidem at, earum
-                  reiciendis omnis doloremque explicabo. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Expedita, porro perferendis
-                  quos quam corrupti hic debitis sunt ullam, illo incidunt iste
-                  obcaecati harum nisi omnis et quaerat fugit tempore
-                  praesentium! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam amet corrupti nisi sed. Ea maxime
-                  dolor consectetur quam esse quae natus quod error, dolorum
-                  voluptate nam excepturi eveniet. Repudiandae, quia. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  natus, maiores numquam dicta, at unde sunt est adipisci,
-                  nesciunt praesentium quam. Sint similique quidem at, earum
-                  reiciendis omnis doloremque explicabo. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Expedita, porro perferendis
-                  quos quam corrupti hic debitis sunt ullam, illo incidunt iste
-                  obcaecati harum nisi omnis et quaerat fugit tempore
-                  praesentium! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam amet corrupti nisi sed. Ea maxime
-                  dolor consectetur quam esse quae natus quod error, dolorum
-                  voluptate nam excepturi eveniet. Repudiandae, quia. Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Autem
-                  natus, maiores numquam dicta, at unde sunt est adipisci,
-                  nesciunt praesentium quam. Sint similique quidem at, earum
-                  reiciendis omnis doloremque explicabo. Lorem ipsum, dolor sit
-                  amet consectetur adipisicing elit. Expedita, porro perferendis
-                  quos quam corrupti hic debitis sunt ullam, illo incidunt iste
-                  obcaecati harum nisi omnis et quaerat fugit tempore
-                  praesentium! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam amet corrupti nisi sed. Ea maxime
-                  dolor consectetur quam esse quae natus quod error, dolorum
-                  voluptate nam excepturi eveniet. Repudiandae, quia.
-               </article>
-            </div>
-         </div>
-      </section>
-
-      <!-- ? Privacy Policy Modal -->
-      <section
-         id="privacy-modal"
-         class="bg-[#00000088] font-[Inter] flex items-center justify-center min-h-screen absolute z-50 hidden"
-      >
-         <div
-            class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
-         >
-            <div
-               class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
-            >
-               <div class="relative flex items-end">
-                  <img
-                     class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
-                     onclick="clickModal('privacy-modal')"
-                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
-                     alt=""
-                  />
-                  <div class="bg-primarybg w-full">
-                     <h2
-                        class="text-base text-center p-4 font-bold text-white w-full"
-                     >
-                        Privacy Policy
-                     </h2>
-                  </div>
-               </div>
-
-               <article
-                  class="overflow-y-auto overflow-x-hidden h-96 p-5 text-xs flex flex-col gap-4"
-               ></article>
-            </div>
-         </div>
-      </section>
-
-      <!-- ? Cookies Modal -->
-      <section
-         id="cookies-modal"
-         class="bg-[#00000088] font-[Inter] flex items-center justify-center min-h-screen absolute z-50 hidden"
-      >
-         <div
-            class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
-         >
-            <div
-               class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
-            >
-               <div class="relative flex items-end">
-                  <img
-                     class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
-                     onclick="clickModal('cookies-modal')"
-                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
-                     alt=""
-                  />
-                  <div class="bg-primarybg w-full">
-                     <h2
-                        class="text-base text-center p-4 font-bold text-white w-full"
-                     >
-                        Cookie Policy
-                     </h2>
-                  </div>
-               </div>
-
-               <article
-                  class="overflow-y-auto overflow-x-hidden h-96 p-5 text-xs flex flex-col gap-4"
-               ></article>
-            </div>
-         </div>
-      </section>
-
-      <!-- ? Contact Modal -->
-      <section
-         id="contact-modal"
-         class="bg-[#00000088] font-[Inter] flex items-center justify-center min-h-screen absolute z-50 hidden"
-      >
-         <div
-            class="fixed inset-0 w-full bg-[#00000088] flex items-center justify-center max-h-screen"
-         >
-            <div
-               class="bg-white shadow-lg w-11/12 sm:w-8/12 lg:max-w-[600px] h-auto max-h-54 rounded-md"
-            >
-               <div class="relative flex items-end">
-                  <img
-                     class="hover:cursor-pointer absolute top-0 right-0 w-7 m-4 rounded-xs"
-                     onclick="clickModal('contact-modal')"
-                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjRUZFRkVGIiBkPSJNMTkgM0g1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgxNGEyIDIgMCAwIDAgMi0yVjVhMiAyIDAgMCAwLTItMm0tMy40IDE0TDEyIDEzLjRMOC40IDE3TDcgMTUuNmwzLjYtMy42TDcgOC40TDguNCA3bDMuNiAzLjZMMTUuNiA3TDE3IDguNEwxMy40IDEybDMuNiAzLjZ6Ii8+PC9zdmc+"
-                     alt=""
-                  />
-                  <div class="bg-primarybg w-full">
-                     <h2
-                        class="text-base text-center p-4 font-bold text-white w-full"
-                     >
-                        Contact
-                     </h2>
-                  </div>
-               </div>
-
-               <article
-                  class="overflow-y-auto overflow-x-hidden h-96 p-5 text-xs flex flex-col gap-4"
-               ></article>
-            </div>
-         </div>
-      </section>
 
       <script>
          // swiper element
