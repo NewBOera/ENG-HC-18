@@ -1,0 +1,11 @@
+.swiper-pagination-bullet {
+   position: absolute;
+   bottom: -20px;
+   z-index: 100;
+}
+
+@media (width >= 768px) {
+   .swiper {
+      max-width: 100% !important;
+   }
+}

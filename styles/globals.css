@@ -22,7 +22,14 @@ body {
 }
 
 .bg-hero {
-   background-image: url(/images/hero_bg.webp);
+   background-image: url(/images/hero_bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+}
+
+.bg-hero2 {
+   background-image: url(/images/hero_bg.png);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: bottom;
@@ -68,5 +75,5 @@ body {
    background-image: url(/images/Rectangle\ 5.png);
    background-repeat: no-repeat;
    background-size: cover;
-   background-blend-mode: ; /* Combina el gradiente con la imagen */
+   /* Combina el gradiente con la imagen */
 }
