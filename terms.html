@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+
+      <!-- ! Tailwind config -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
+            theme: {
+               extend: {
+                  colors: {},
+                  fontFamily: {
+                     Montserrat: ["Montserrat", "sans-serif"],
+                     DM: ["DM Sans", "sans-serif"],
+                     Playfair: ["Playfair Display", "sans-serif"],
+                  },
+               },
+            },
+         };
+      </script>
+
+      <link rel="stylesheet" href="styles/privacy.css" />
+      <link rel="stylesheet" href="styles/navbar.css" />
+
+      <script defer src="scripts/navbar.js"></script>
+
+      <!-- ? Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <!-- ? navbar mobile -->
+      <header class="flex md:hidden">
+         <nav
+            class="flex w-full gap-5 h-[80px] px-5 md:hidden bg-[#010658] border-b-[1px] border-white"
+         >
+            <div class="flex items-center gap-2">
+               <div
+                  class="bg-[#D9D9D9] flex justify-center items-center w-[50px] h-[50px]"
+               >
+                  <img class="object-contain" src="" alt="Logo" />
+               </div>
+            </div>
+         </nav>
+
+         <div class="menu-container bg-[#010658]" id="menu-container">
+            <div class="p-5">
+               <button class="close-btn" id="close-btn">&times;</button>
+            </div>
+            <ul class="text-textPrimary font-DM">
+               <li><a href="#home-section">Home</a></li>
+               <li><a href="#hotels-section">Hotels</a></li>
+               <li><a href="#about-section">About Us</a></li>
+               <li><a href="#amenities-section">Amenities</a></li>
+               <li><a href="#24-section">Subscribe</a></li>
+               <li><a href="#contact-section">Contact</a></li>
+            </ul>
+         </div>
+      </header>
+
+      <!-- ? Header section desktop-->
+      <header
+         class="hidden bg-[#010658] border text-white justify-center items-center md:flex fixed z-50 w-full backdrop-blur-2xl"
+      >
+         <nav
+            class="flex w-full justify-between rounded-xl sm:px-8 lg:px-10 h-[80px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1400px]"
+         >
+            <div class="flex items-center grow basis-0 gap-10">
+               <div class="font-normal text-lg flex items-center gap-4">
+                  <a href="#contact-section"
+                     ><img
+                        class="object-contain w-10"
+                        src="./"
+                        alt="Logo"
+                        title="{CHANGE NAME}"
+                  /></a>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!-- ? Hero section -->
+      <section id="home-section" class="flex justify-center priv-hero">
+         <div
+            class="flex flex-col items-center justify-center md:min-h-[450px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl: [1280px] 2xl:w-[1300px]"
+         >
+            <div class="p-3 md:p-5 flex flex-col justify-center items-center">
+               <h1
+                  class="font-Playfair p-10 text-white font-medium text-[40px]/[40px] text-center md:text-7xl lg:text-[80px]/[80px] xl:w-[60%]"
+               >
+                  Terms & Conditions
+               </h1>
+            </div>
+         </div>
+      </section>
+
+      <!-- ? content section -->
+      <section id="content-section" class="flex justify-center">
+         <div class="flex items-center justify-between w-full flex-col">
+            <div
+               class="flex flex-col gap-5 p-5 py-20 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl: [1280px] 2xl:w-[1300px] font-DM [&>div>h3]:text-2xl [&>div>h3]:font-bold [&>div>p]:font-normal"
+            >
+               <h3>
+                  <span class="font-bold">Effective Since:</span> 07/08/2024
+               </h3>
+
+               <!--!term-->
+               <div>
+                  <h3>1. Welcome Aboard!</h3>
+                  <p>
+                     Hey there! Thanks for choosing {CHANGE NAME} for all your
+                     hotel booking needs. We’re here to help you find and book
+                     the best hotel casino stays across the UK. By using our
+                     website, {CHANGE DOMAIN}, you’re agreeing to these Terms of
+                     Service. If you’re not on board with any part of these
+                     Terms, we kindly ask you to stop using our site.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>2. Our Content</h3>
+                  <p>
+                     Everything you see on our site—whether it's text, images,
+                     logos, or software—is owned by {CHANGE NAME} or our
+                     partners. This content is protected by copyright and
+                     trademark laws, so please don’t use it without our
+                     permission.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>3. Using Our Site</h3>
+                  <p>
+                     We want you to enjoy your experience on our site, so here’s
+                     the deal:
+                  </p>
+                  <ul class="list-inside list-disc">
+                     <li>
+                        Don’t mess with the site’s functionality or disrupt
+                        other users.
+                     </li>
+                     <li>
+                        Avoid trying to access restricted parts of our site or
+                        its systems.
+                     </li>
+                     <li>
+                        Don’t upload or transmit harmful code through our site.
+                     </li>
+                  </ul>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>4. Information Accuracy</h3>
+                  <p>
+                     We strive to keep our information accurate and up-to-date.
+                     However, we can’t guarantee everything is perfect or
+                     current. The details provided are for general purposes, and
+                     your use of our site is at your own risk.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>5. External Links</h3>
+                  <p>
+                     Our site might link to other websites for your convenience.
+                     We don’t control these sites and aren’t responsible for
+                     their content or how they handle your privacy. If you visit
+                     these sites, you do so at your own risk.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>6. Limitation of Liability</h3>
+                  <p>
+                     To the fullest extent allowed by law, {CHANGE NAME}, its
+                     affiliates, and its team aren’t responsible for any
+                     indirect, incidental, special, or consequential damages
+                     that arise from using our site. This includes any issues
+                     like:
+                  </p>
+                  <ul class="list-inside list-disc">
+                     <li>Trouble accessing or using our site.</li>
+                     <li>
+                        Unauthorized access to our servers or your personal
+                        info.
+                     </li>
+                     <li>Errors or omissions in the site’s content.</li>
+                  </ul>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>7. Your Responsibility</h3>
+                  <p>
+                     If any issues arise from your use of our site or if you
+                     break these Terms, you agree to protect and indemnify
+                     {CHANGE NAME}, its affiliates, and its team from any claims
+                     or damages.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>8. Changes to These Terms</h3>
+                  <p>
+                     We might update these Terms from time to time. Major
+                     changes will be posted on our site, and it’s up to you to
+                     keep an eye on them. Continuing to use our site after
+                     changes means you accept the updated Terms.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>9. Legal Stuff</h3>
+                  <p>
+                     These Terms are governed by the laws of the United Kingdom.
+                     Any legal disputes will be handled by the courts in the UK.
+                  </p>
+               </div>
+               <!--!term-->
+               <div>
+                  <h3>10. Get in Touch</h3>
+                  <p>
+                     If you have any questions or concerns about these Terms,
+                     feel free to reach out to us:
+                  </p>
+                  <ul class="list-inside list-disc">
+                     <li>Email: info@{CHANGE DOMAIN}</li>
+                     <li>Support Email: support@{CHANGE DOMAIN}</li>
+                     <li>Phone: +44 870 888 8888</li>
+                     <li>
+                        Address: Holden House, 57 Rathbone Pl, London W1T 1JU,
+                        United Kingdom
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+
+   <footer id="footer" class="flex justify-center bg-[#010658]">
+      <div
+         class="p-5 pt-10 flex flex-col gap-8 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+      >
+         <div class="flex flex-col lg:flex-row gap-20">
+            <div class="flex flex-col justify-between gap-2 lg:w-[29%]">
+               <span class="text-white font-Playfair text-3xl"
+                  >{Name of the page}</span
+               >
+               <span class="text-white font-DM">+44 870 888 8888</span>
+               <span class="text-[#F2CB04] font-DM"
+                  >support@{domainofthepage}.com
+               </span>
+               <span class="text-[#F2CB04] font-DM"
+                  >www.{domainofthepage}.com
+               </span>
+               <span class="font-light text-white font-DM">
+                  Holden House, 57 Rathbone Pl, London W1T 1JU, United
+                  Kingdom</span
+               >
+            </div>
+
+            <div class="flex flex-col justify-between gap-2 lg:w-[29%]">
+               <span
+                  class="text-[#F2CB04] font-DM"
+                  onclick="clickModal('terms-modal')"
+                  >Terms & Conditions
+               </span>
+               <span class="text-[#F2CB04] font-DM">FAQs </span>
+               <span class="text-[#F2CB04] font-DM">Cookie Policy </span>
+               <span
+                  class="text-[#F2CB04] font-DM"
+                  onclick="clickModal('privacy-modal')"
+                  >Privacy Notice</span
+               >
+               <span class="text-[#F2CB04] font-DM">Vouchers </span>
+               <span class="text-[#F2CB04] font-DM">Cookie Preferences </span>
+            </div>
+
+            <div
+               class="flex flex-col lg:flex-row items-center justify-center gap-5 h-max"
+            >
+               <div class="[&>img]:w-[74px] lg:[&>img]:w-[115px]">
+                  <img src="images/logos/100.png" alt="" />
+               </div>
+               <div
+                  class="flex flex-wrap h-max justify-center lg:justify-between gap-5 [&>img]:w-[74px] [&>img]:h-[44px] lg:w-[50%]"
+               >
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 1.png"
+                     alt="master-card-logo"
+                  />
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 2.png"
+                     alt="maestro-logo"
+                  />
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 3.png"
+                     alt="visa-logo"
+                  />
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 4.png"
+                     alt="american-express-logo"
+                  />
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 5.png"
+                     alt="google-pay-logo"
+                  />
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 6.png"
+                     alt="apple-pay-logo"
+                  />
+               </div>
+            </div>
+         </div>
+
+         <div class="bg-[#F2CB04] h-[1px] w-full"></div>
+
+         <div
+            class="flex flex-col items-center lg:flex-row justify-between gap-10"
+         >
+            <div class="flex flex-col gap-5 lg:w-[40%]">
+               <span class="text-white lg:text-xl font-DM font-normal">
+                  © 2024 All Rights Reserved <br />
+                  {nameofthepage}
+               </span>
+               <div class="flex lg:justify-start justify-center">
+                  <img
+                     src="images/logos/MasterCard_Logo.svg 1.png"
+                     class="w-[50px] h-[50px]"
+                     alt=""
+                  />
+               </div>
+            </div>
+            <div
+               class="text-white lg:w-[70%] text-sm font-DM font-light text-left lg:text-right"
+            >
+               This site is run by {name of the page}. Some of the hotels
+               showcased might include sponsored content or promotions. We
+               promise to deliver honest and detailed reviews for all listings.
+               If you book through our links, we might earn a commission, but it
+               won’t cost you anything extra. <br />
+               <br />
+               Hey, big spender! Always play it smart. Set your limits, stick to
+               your budget, and avoid draining your wallet. If it ever feels
+               like the game is getting the better of you, get help immediately.
+               Keep gambling fun and exciting! <br /><br />
+               Your safety is our top concern! Our booking process is
+               safeguarded with the latest technology, created by professionals,
+               to ensure your information stays secure. You can trust us to
+               protect you!
+            </div>
+         </div>
+      </div>
+   </footer>
+</html>

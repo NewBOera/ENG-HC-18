@@ -29,6 +29,7 @@
       <script defer type="module" src="scripts/swiper.mjs"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+      <script defer src="scripts/button-to-form.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
       <link rel="stylesheet" href="styles/swiperStyles.css" />
@@ -109,7 +110,8 @@
                <li><a href="#home-section">Home</a></li>
                <li><a href="#hotels-section">Hotels</a></li>
                <li><a href="#about-section">About Us</a></li>
-               <li><a href="#subscribe-section">Subscribe</a></li>
+               <li><a href="#amenities-section">Amenities</a></li>
+               <li><a href="#24-section">Subscribe</a></li>
                <li><a href="#contact-section">Contact</a></li>
             </ul>
          </div>
@@ -135,8 +137,10 @@
                </div>
             </div>
 
-            <ul class="font-medium text-accent flex gap-8 xl:gap-12">
-               <li class="hover:text- transition-all duration-200">
+            <ul
+               class="font-medium text-accent flex text-[20px] font-DM gap-8 xl:gap-12"
+            >
+               <li class="hover:text-transition-all duration-200">
                   <a href="#home-section">Home</a>
                </li>
 
@@ -154,7 +158,7 @@
                <li
                   class="hover:text- transition-all duration-200 hidden lg:block"
                >
-                  <a href="#subscribe-section">Subscribe</a>
+                  <a href="#24-section">Subscribe</a>
                </li>
                <li
                   class="hover:text- transition-all duration-200 hidden xl:block"
@@ -168,45 +172,47 @@
       <main class="[&>section]:pt-[80px] font-Playfair">
          <!-- ? Hero section -->
          <section id="home-section" class="flex justify-center bg-hero">
-            <div class="flex w-full flex-col">
+            <div class="flex items-center justify-between w-full flex-col">
                <div
-                  class="self-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl: [1280px] 2xl:w-[1300px]"
+                  class="flex flex-col lg:pt-20 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl: [1280px] 2xl:w-[1300px]"
                >
                   <div
                      class="p-3 md:p-5 min-h-[450px] flex flex-col items-center gap-5 md:gap-8"
                   >
                      <h1
-                        class="font-Playfair text-white font-medium text-[40px]/[40px] md:text-[96px]/[96px] lg:w-[55%]"
+                        class="font-Playfair text-white font-medium text-[40px]/[40px] md:text-7xl lg:text-[96px]/[96px] lg:w-[55%]"
                      >
-                        Unforgettable Experiences in UK Hotels
+                        Are you ready for an epic UK experience?
                      </h1>
 
                      <div
-                        class="bg-[#010658] text-xs md:text-[20px]/[24px] font-DM font-light text-white p-3 lg:w-[55%]"
+                        class="bg-[#010658] text-xs md:text-[20px]/[24px] font-DM font-light text-white p-4 lg:w-[55%]"
                      >
                         <p>
-                           Embark on your ultimate luxury and entertainment
-                           adventure at a top casino hotel in the UK. Whether
-                           you seek thrills at the tables or relaxation in
-                           opulent surroundings, your perfect stay awaits.
+                           Kick off your personalized adventure filled with fun
+                           and excitement at one of the UK's top casino hotels.
+                           Whether you're after the thrill of the casino or a
+                           peaceful place to unwind, your perfect getaway is
+                           waiting for you.
                         </p>
                      </div>
 
-                     <button
-                        class="px-8 py-2 md:py-4 md:px-10 border-[3px] lg:w-[25%] font-Playfair text-white border-[#F2E206] md:text-[24px] rounded-[35px] backdrop-blur-sm bg-[#00000011] mb-28"
+                     <a
+                        href="#about-section"
+                        class="px-8 py-2 text-center md:py-4 md:px-10 border-[3px] lg:w-[25%] font-Playfair text-white border-[#F2E206] md:text-[24px] rounded-[35px] backdrop-blur-sm bg-[#00000011]"
                      >
-                        Discover now
-                     </button>
+                        Find out more
+                     </a>
                   </div>
                </div>
 
-               <div class="w-full">
+               <div class="w-full backdrop-blur-md">
                   <div
-                     class="border-t-[3px] backdrop-blur-md border-b-[3px] border-[#F2E206] w-full"
+                     class="border-t-[3px] border-b-[3px] border-[#F2E206] w-full"
                   >
                      <swiper-container
                         init="false"
-                        class="mySwiper p-5"
+                        class="mySwiper py-5"
                         space-between="30"
                         free-mode="true"
                      >
@@ -264,7 +270,7 @@
          </section>
 
          <!-- ? cards section -->
-         <section id="cards-section" class="flex flex-col items-center">
+         <section id="hotels-section" class="flex flex-col items-center">
             <div
                class="flex flex-col sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1300px] p-3 md:p-10"
             >
@@ -272,14 +278,14 @@
                   <h2
                      class="font-Playfair text-[#010658] font-medium text-[24px]/[20px] lg:text-[64px]/[64px]"
                   >
-                     Your new favourite brick and mortar hotel with casino is
-                     just one click away
+                     Give your days off a different touch and live unforgettable
+                     nights, all in the same place
                   </h2>
                   <h3
-                     class="text-[#010658] font-DM font-medium text-[16px]/[16px] lg:text-[32px]/[32px] lg:w-[45%]"
+                     class="text-[#010658] font-DM font-medium text-[16px]/[16px] lg:text-[32px]/[32px] lg:w-[70%]"
                   >
-                     Experience the best moments in the most exclusive
-                     destinations
+                     Unwind your luck and find your dream holiday at the UK's
+                     finest brick & mortar casino hotels in just one click
                   </h3>
                </div>
             </div>
@@ -344,11 +350,13 @@
                      />
                   </div>
 
-                  <div
+                  <a
+                     id="doubletree"
+                     href="#about-section"
                      class="bg-[#010658] p-2 text-center rounded-b-lg text-[20px]/[20px] md:text-[32px]/[36px] text-[#F2E206]"
                   >
                      Book it
-                  </div>
+                  </a>
                </div>
                <!--!card-->
                <div
@@ -402,11 +410,13 @@
                      />
                   </div>
 
-                  <div
+                  <a
+                     id="prestige"
+                     href="#about-section"
                      class="bg-[#010658] p-2 text-center rounded-b-lg text-[20px]/[20px] md:text-[32px]/[36px] text-[#F2E206]"
                   >
                      Book it
-                  </div>
+                  </a>
                </div>
                <!--!card-->
                <div
@@ -460,11 +470,13 @@
                      />
                   </div>
 
-                  <div
+                  <a
+                     id="zedwell"
+                     href="#about-section"
                      class="bg-[#010658] p-2 text-center rounded-b-lg text-[20px]/[20px] md:text-[32px]/[36px] text-[#F2E206]"
                   >
                      Book it
-                  </div>
+                  </a>
                </div>
                <!--!card-->
                <div
@@ -513,11 +525,13 @@
                      />
                   </div>
 
-                  <div
+                  <a
+                     id="stgiles"
+                     href="#about-section"
                      class="bg-[#010658] p-2 text-center rounded-b-lg text-[20px]/[20px] md:text-[32px]/[36px] text-[#F2E206]"
                   >
                      Book it
-                  </div>
+                  </a>
                </div>
                <!--!card-->
                <div
@@ -566,33 +580,39 @@
                      />
                   </div>
 
-                  <div
+                  <a
+                     id="broadwick"
+                     href="#about-section"
                      class="bg-[#010658] p-2 text-center rounded-b-lg text-[20px]/[20px] md:text-[32px]/[36px] text-[#F2E206]"
                   >
                      Book it
-                  </div>
+                  </a>
                </div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
          </div>
-         <!-- ?  form section -->
-         <section id="form-section" class="flex flex-col items-center bg-form">
+         <!-- ?  about section -->
+         <section
+            id="about-section"
+            class="flex pb-10 flex-col items-center bg-form"
+         >
             <div
-               class="flex flex-col lg:flex-row-reverse lg:gap-20 gap-5 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px] p-3 md:p-5"
+               class="flex flex-col lg:flex-row-reverse lg:gap-10 gap-5 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px] p-3 md:p-5"
             >
                <div class="flex flex-col items-center gap-5 lg:grow">
                   <div class="flex justify-center">
                      <h2
-                        class="font-medium font-DM text-white text-[24px]/[24px] text-center md:w-[60%] lg:w-full"
+                        class="font-medium font-DM text-white text-[24px]/[24px] text-center md:w-[50%]"
                      >
-                        Get an estimate with one of our sales agents!
+                        Reach out for a quick estimate
                      </h2>
                   </div>
 
                   <form
+                     id="contact-us-form"
                      action=""
-                     class="font-DM border w-full md:w-[405px] backdrop-blur-md border-[#F2E206] p-4 rounded-[20px] text-[14px]/[24px] flex flex-col gap-4"
+                     class="font-DM border w-full md:w-[405px] backdrop-blur-md border-[#F2E206] p-4 rounded-[20px] text-[14px]/[24px] md:text-[20px]/[24px] flex flex-col gap-4"
                   >
                      <div class="flex bg-white/20 p-2 rounded-xl gap-3">
                         <label for="name" class="font-light text-white"
@@ -652,8 +672,25 @@
                               alt="icon"
                            />
                         </div>
-                        <label for="guests">Number of guests & rooms</label>
-                        <select name="guests" id="guests"></select>
+                        <label for="guests" class="text-white"
+                           >Number of guests & rooms</label
+                        >
+                        <select
+                           name="guests"
+                           id="guests"
+                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl"
+                        >
+                           <option value="">1</option>
+                           <option value="">2</option>
+                           <option value="">3</option>
+                           <option value="">4</option>
+                           <option value="">5</option>
+                           <option value="">6</option>
+                           <option value="">7</option>
+                           <option value="">8</option>
+                           <option value="">9</option>
+                           <option value="">10</option>
+                        </select>
                      </div>
                      <div
                         class="flex justify-between items-center bg-white/20 p-2 rounded-xl gap-3"
@@ -665,8 +702,11 @@
                               alt="icon"
                            />
                         </div>
-                        <label for="dates">Dates</label>
-                        <select name="dates" id="dates"></select>
+                        <label for="dates" class="text-white">Dates</label>
+                        <input
+                           type="date"
+                           class="bg-white/20 rounded-xl p-2 text-white"
+                        />
                      </div>
                      <div
                         class="flex justify-between items-center bg-white/20 p-2 rounded-xl gap-3"
@@ -678,14 +718,29 @@
                               alt="icon"
                            />
                         </div>
-                        <label for="hotel">Hotel</label>
-                        <select name="hotel" id="hotel"></select>
+                        <label for="hotel" class="text-white">Hotel</label>
+                        <select
+                           name="hotel"
+                           id="hotels"
+                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl"
+                        >
+                           <option value="">Choose Hotel</option>
+                           <option value="doubletree">DoubleTree</option>
+                           <option value="prestige">
+                              Prestige Plaza Hotel
+                           </option>
+                           <option value="zedwell">Zedwell Piccadilly</option>
+                           <option value="stgiles">St Giles Hotel</option>
+                           <option value="broadwick">Broadwick Soho</option>
+                        </select>
                      </div>
-                     <button
-                        class="bg-[#F2E206] mt-3 text-[#010873] text-[20px]/[24px] font-bold p-2 rounded-[15px]"
+
+                     <a
+                        onclick="sendSubscribeForm('contact-us-form')"
+                        class="bg-[#F2E206] text-center cursor-pointer mt-3 text-[#010873] text-[20px]/[24px] font-bold p-2 rounded-[15px]"
                      >
-                        CONTACT ME
-                     </button>
+                        CONTACT US
+                     </a>
 
                      <div
                         class="flex justify-center gap-2 [&>img]:w-[39px] [&>img]:h-[22px]"
@@ -718,11 +773,11 @@
                   </form>
                </div>
 
-               <div class="flex flex-col items-center gap-5 lg:w-[70%]">
+               <div class="flex flex-col items-center gap-5 lg:w-[80%]">
                   <h2
-                     class="text-white text-[32px]/[32px] lg:text-[55px]/[64px]"
+                     class="text-white text-[32px]/[32px] text-left lg:text-[55px]/[64px]"
                   >
-                     Get to Know {NAME}
+                     Time to get excellence in service
                   </h2>
 
                   <p
@@ -736,53 +791,53 @@
                      make your booking process effortless.
                   </p>
                   <ul
-                     class="list-inside list-disc flex flex-col gap-2 text-white font-light font-DM px-4"
+                     class="list-inside list-disc lg:text-[20px] flex flex-col gap-2 text-white font-light font-DM px-2"
                   >
                      <li>
-                        Customer-Centric Approach: We prioritize your needs,
-                        ensuring a seamless and satisfying experience.
+                        Your Needs First: We put you at the center, ensuring
+                        your experience is smooth and enjoyable.
                      </li>
                      <li>
-                        Integrity and Transparency: We provide honest and
-                        transparent information, guiding you to make informed
-                        decisions.
+                        Clear and Honest Info: We provide straightforward
+                        information to help you make the best choices.
                      </li>
                      <li>
-                        Innovation: We leverage technology and expertise to
-                        enhance your booking and stay experience.
+                        Innovative Solutions: Using the latest technology, we
+                        make your booking and stay hassle-free.
                      </li>
                      <li>
-                        Reliability: Count on us for reliable service, from
-                        initial inquiry to post-stay support.
+                        Always Reliable: From your first inquiry to post-stay
+                        support, we're here for you.
                      </li>
                      <li>
-                        Passion for Hospitality: We are passionate about
-                        delivering exceptional hospitality and unforgettable
-                        experiences.
+                        Hospitality Enthusiasts: We love creating unforgettable
+                        moments for you in amazing spaces.
                      </li>
                   </ul>
                </div>
             </div>
          </section>
          <!-- ? Top-notch section -->
-         <section id="top-section" class="flex flex-col items-center">
+         <section id="amenities-section" class="flex flex-col items-center">
             <div
-               class="flex flex-col md:flex-row gap-5 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px] p-3 md:p-5"
+               class="flex flex-col md:flex-row gap-10 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1300px] p-3 md:p-5"
             >
-               <div class="flex flex-col gap-5 md:w-[49%]">
+               <div class="flex flex-col gap-5 justify-between md:w-[49%]">
                   <h2
-                     class="tex-[#010658] font-medium text-[24px]/[24px] md:text-[32px]/[32px] lg:text-[64px]/[80px]"
+                     class="tex-[#010658] text-[#010658] font-medium text-[24px]/[24px] md:text-[32px]/[32px] lg:text-[62px]/[70px]"
                   >
-                     {Name of the page}: Top-Notch Amenities at Casino Hotels
+                     {Name of the page}: Another way to say DREAM VACTIONS
                   </h2>
 
-                  <p class="md:text-[18px]/[20px] lg:text-[32px]/[32px]">
-                     We handle every detail so you can relax and enjoy your stay
-                     to the fullest
+                  <p
+                     class="md:text-[18px]/[20px] text-[#010658] font-DM lg:text-[32px]/[32px]"
+                  >
+                     We take care of everything so you can kick back and enjoy
+                     your trip to the fullest
                   </p>
-                  <div class="w-full h-[165px] lg:h-[227px] bg-blue-100">
+                  <div class="w-full h-[165px] lg:h-[280px] bg-blue-100">
                      <img
-                        src="images/cards/2.webp"
+                        src="images/cards/2.png"
                         class="w-full h-full object-cover"
                         alt=""
                      />
@@ -791,18 +846,18 @@
                   <p
                      class="text-xs md:text-[14px]/[14px] lg:text-[20px]/[24px] font-DM font-light text-justify"
                   >
-                     Enjoy the convenience of 24/7 online services for seamless
-                     booking, inquiries, and support, keeping you connected at
-                     all times. Stay active and refreshed with our on-site GYM
-                     and invigorating Spinning classes, complemented by an ATM
-                     inside the hotel for easy access to cash.
+                     Our 24/7 online services make everything easy, from booking
+                     to support, so you’re always in the loop. At the casino
+                     hotels we feature, you can stay active with their great
+                     on-site gyms and spinning classes, and grab cash whenever
+                     you need it from their handy hotel ATMs.
                   </p>
                </div>
 
-               <div class="flex flex-col gap-5 md:w-[49%]">
+               <div class="flex flex-col justify-between gap-5 md:w-[49%]">
                   <div class="w-full md:h-[96px] lg:h-[227px]">
                      <img
-                        src="images/cards/1.webp"
+                        src="images/cards/1.png"
                         class="w-full h-full object-cover"
                         alt=""
                      />
@@ -810,16 +865,15 @@
                   <p
                      class="text-xs font-DM font-light md:text-[14px]/[14px] text-justify lg:text-[20px]/[24px]"
                   >
-                     Experience an unparalleled stay with our comprehensive
-                     array of amenities designed to elevate every aspect of your
-                     visit. Choose from flexible booking options, including
-                     Deposit needed or no deposit needed (details in hotel
-                     description), ensuring your financial preferences are met
-                     effortlessly.
+                     Relax and unwind in their luxurious spas and enjoy a
+                     variety of wellness treatments designed to rejuvenate you
+                     during your stay. Many of these hotels also offer stunning
+                     pool areas, perfect for a refreshing swim or lounging in
+                     the sun.
                   </p>
                   <div class="w-full md:h-[96px] lg:h-[227px]">
                      <img
-                        src="images/cards/3.webp"
+                        src="images/cards/3.png"
                         class="w-full h-full object-cover"
                         alt=""
                      />
@@ -827,12 +881,11 @@
                   <p
                      class="text-xs font-DM font-light md:text-[14px]/[14px] lg:text-[20px]/[24px] text-justify"
                   >
-                     Indulge in luxury with Top Shelf Liquors and exceptional
-                     dining options available through our Best restaurants and
-                     room service. Experience efficient customer service with
-                     Instant reception’ reply, ensuring prompt assistance and a
-                     smooth check-in process. For secure and immediate
-                     transactions, take advantage of Instant payment via PayPal.
+                     Savor premium beverages and delectable meals from the
+                     hotel’s finest restaurants and through room service. Get
+                     prompt assistance with instant reception responses and
+                     enjoy hassle-free check-ins. Complete your payments
+                     securely and instantly with PayPal.
                   </p>
                </div>
             </div>
@@ -840,7 +893,7 @@
 
          <!-- ?Top-notch section -->
          <section id="24-section" class="flex flex-col items-center gap-3">
-            <div class="flex w-full md:flex-row gap-2">
+            <div class="flex w-full py-5 md:flex-row gap-2">
                <div class="flex justify-center w-full h-max">
                   <div class="w-3/12 bg-[#F2CB04]"></div>
 
@@ -850,7 +903,7 @@
                      <h3
                         class="text-sm md:text-[20px]/[20px] lg:text-[32px]/[32px] text-[#010658] font-DM font-medium"
                      >
-                        24/7 ONLINE SUPPORT. CONTACT US TODAY
+                        For continuous support: We are here 24/7!
                      </h3>
                   </div>
 
@@ -867,26 +920,25 @@
             </div>
          </section>
          <!-- ?Top-notch section -->
-         <div id="home-section" class="flex justify-center">
+         <div id="amenities" class="flex justify-center">
             <div
                class="flex flex-col items-center gap-5 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
             >
-               <div class="p-5 flex flex-col w-full md:w-[85%] gap-4">
+               <div class="p-5 flex flex-col w-full md:w-[85%] lg:w-full gap-4">
                   <h2
-                     class="text-[#010658] md:text-[32px]/[32px] text-[16px]/[16px] font-DM font-medium"
+                     class="text-[#010658] xl:pt-10 md:text-[32px]/[32px] lg:text-[48px]/[48px] text-[16px]/[16px] font-DM font-medium"
                   >
-                     Traveling Advices
+                     Planning a journey?
                   </h2>
                   <h3
                      class="font-DM md:text-[20px]/[20px] text-[#010658] text-sm"
                   >
-                     Make the most of your casino hotel stay with these expert
-                     tips:
+                     Follow this expert’s travel tips to get the best of it
                   </h3>
                </div>
                <!--!CARDS-->
                <article
-                  class="p-3 flex flex-col justify-between lg:flex-row lg:flex-wrap lg:[&>div]:w-[48%] gap-5 items-center md:w-[85%]"
+                  class="p-3 flex flex-col justify-between lg:flex-row lg:flex-wrap md:w-[85%] lg:[&>div]:w-[49%] gap-5 items-center lg:w-full"
                >
                   <!--!card-->
                   <div
@@ -902,17 +954,18 @@
                         <div class="flex flex-col">
                            <div>
                               <h2
-                                 class="text-[#010658] md:text-[48px]/[48px] font-medium font-DM text-xl"
+                                 class="text-[#010658] md:text-[40px]/[40px] font-medium font-DM text-xl"
                               >
-                                 Plan Ahead:
+                                 Flexible Booking:
                               </h2>
                            </div>
                            <div
                               class="text-sm md:text-[20px]/[20px] text-[#010658]"
                            >
                               <h3>
-                                 Take advantage of Deposit needed / no deposit
-                                 needed options in hotel descriptions.
+                                 Hotel listings feature payment options that
+                                 match financial preferences, Find out the best
+                                 for you..
                               </h3>
                            </div>
                         </div>
@@ -934,20 +987,20 @@
                            2
                         </div>
 
-                        <div class="flex flex-col md:gap-2">
+                        <div class="flex flex-col">
                            <div>
                               <h2
-                                 class="text-[#010658] md:text-[48px]/[48px] font-medium font-DM text-xl"
+                                 class="text-[#010658] md:text-[40px]/[40px] font-medium font-DM text-xl"
                               >
-                                 Convenience:
+                                 Seamless Support:
                               </h2>
                            </div>
                            <div
                               class="text-sm md:text-[20px]/[20px] text-[#010658]"
                            >
                               <h3>
-                                 Utilize 24/7 online services for quick
-                                 reservations and inquiries
+                                 Look for 24/7 online services that ensure
+                                 straightforward bookings and assistance.
                               </h3>
                            </div>
                         </div>
@@ -972,17 +1025,18 @@
                         <div class="flex flex-col md:gap-2">
                            <div>
                               <h2
-                                 class="text-[#010658] md:text-[48px]/[48px] font-medium font-DM text-xl"
+                                 class="text-[#010658] md:text-[40px]/[40px] font-medium font-DM text-xl"
                               >
-                                 Wellness:
+                                 Stay Active:
                               </h2>
                            </div>
                            <div
                               class="text-sm md:text-[20px]/[20px] text-[#010658]"
                            >
                               <h3>
-                                 Stay fit with GYM and Spinning classes on the
-                                 premise.
+                                 If you are fitness enthusiast, look for for
+                                 options with on-site gyms, spinning classes and
+                                 more!
                               </h3>
                            </div>
                         </div>
@@ -1006,17 +1060,17 @@
                         <div class="flex flex-col md:gap-2">
                            <div>
                               <h2
-                                 class="text-[#010658] md:text-[48px]/[48px] font-medium font-DM text-xl"
+                                 class="text-[#010658] md:text-[40px]/[40px] font-medium font-DM text-xl"
                               >
-                                 Financial Ease:
+                                 Access Cash:
                               </h2>
                            </div>
                            <div
                               class="text-sm md:text-[20px]/[20px] text-[#010658]"
                            >
                               <h3>
-                                 Access cash conveniently with an ATM inside the
-                                 hotel.
+                                 ATMs located inside hotels for easy cash
+                                 withdrawals are a plus to make you stay better.
                               </h3>
                            </div>
                         </div>
@@ -1041,17 +1095,18 @@
                         <div class="flex flex-col md:gap-2">
                            <div>
                               <h2
-                                 class="text-[#010658] md:text-[48px]/[48px] font-medium font-DM text-xl"
+                                 class="text-[#010658] md:text-[40px]/[40px] font-medium font-DM text-xl"
                               >
-                                 Financial Ease:
+                                 Fine Dining:
                               </h2>
                            </div>
                            <div
                               class="text-sm md:text-[20px]/[20px] text-[#010658]"
                            >
                               <h3>
-                                 Access cash conveniently with an ATM inside the
-                                 hotel.
+                                 Remember top-shelf liquors and gourmet dining
+                                 are accessible via restaurants and room
+                                 service.
                               </h3>
                            </div>
                         </div>
@@ -1076,9 +1131,10 @@
                         <div class="flex flex-col md:gap-2">
                            <div>
                               <h2
-                                 class="text-[#010658] md:text-[48px]/[48px] font-medium font-DM text-xl"
+                                 class="text-[#010658] md:text-[40px]/[40px] font-medium font-DM text-xl"
                               >
-                                 Subscribe to our newsletter!
+                                 Stay in the loop: <br />
+                                 Register today!
                               </h2>
                            </div>
                            <div
@@ -1095,50 +1151,55 @@
                   </div>
                </article>
 
-               <div
-                  class="bg-[#F2CB04] flex flex-col lg:flex-row items-center w-[85%] gap-5 p-5"
-               >
-                  <div>
-                     <h3
-                        class="text-[#010658] text-center md:text-[24px]/[32px] font-medium font-DM"
-                     >
-                        Subscribe and Never Miss the Best Offers!
-                     </h3>
-                  </div>
-
-                  <form
-                     action=""
-                     class="w-full flex flex-col lg:flex-row items-center gap-5"
+               <div id="subscribe-form" class="flex justify-center w-full">
+                  <div
+                     class="bg-[#F2CB04] mt-[10px] flex flex-col lg:flex-row items-center w-full gap-5 p-5"
                   >
-                     <input
-                        class="p-2 text-center w-full px-5 bg-white font-DM md:text-2xl"
-                        placeholder="example@example.com"
-                        type="email"
-                        name="email"
-                        id=""
-                     />
-                     <button
-                        class="bg-[#010658] rounded-[29px] font-DM w-full p-3 md:text-[24px]/[32px] text-[#F2CB04]"
+                     <div class="shrink-0">
+                        <h3
+                           class="text-[#010658] text-center md:text-[24px]/[32px] font-medium font-DM"
+                        >
+                           Newsletter: Don’t miss out on amazing deals!
+                        </h3>
+                     </div>
+
+                     <form
+                        id="send-subscribe-form"
+                        action=""
+                        class="w-full flex flex-col lg:flex-row items-center gap-5"
                      >
-                        Subscribe
-                     </button>
-                  </form>
+                        <input
+                           class="p-2 text-center w-full px-5 bg-white font-DM md:text-2xl"
+                           placeholder="example@example.com"
+                           type="email"
+                           name="email"
+                           id=""
+                        />
+                        <a
+                           onclick="sendSubscribeForm('send-subscribe-form')"
+                           class="bg-[#010658] text-center rounded-[29px] font-DM w-full p-3 md:text-[24px]/[32px] text-[#F2CB04]"
+                        >
+                           Subscribe
+                        </a>
+                     </form>
+                  </div>
                </div>
             </div>
          </div>
 
-         <!--?2nd  form-->
-         <section id="home-section" class="flex justify-center">
+         <!--?contact form-->
+         <section id="contact-section" class="flex justify-center">
             <div
-               class="flex flex-col w-full gap-5 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
+               class="flex flex-col w-full gap-5 p-5 pb-10 items-center sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
             >
                <h2
-                  class="font-DM md:text-[48px]/[48px] font-medium text-[#010658]"
+                  class="font-DM md:text-[48px]/[48px] text-center font-medium text-[#010658]"
                >
-                  Always available to help you
+                  Support available <br />
+                  whenever you need it
                </h2>
 
-               <div class="flex flex-col md:flex-row-reverse gap-5 w-[85%]">
+               <div class="flex flex-col md:flex-row-reverse gap-5">
                   <div class="h-[150px] w-full md:h-full md:w-1/2">
                      <img
                         src="images/8b08e844fd136633600296fd5962a229.jpeg"
@@ -1148,6 +1209,7 @@
                   </div>
 
                   <form
+                     id="always-form"
                      action=""
                      class="flex flex-col gap-3 md:w-1/2 font-DM md:[&>div]:text-base lg:[&>div]:text-lg"
                   >
@@ -1207,23 +1269,18 @@
                         placeholder="Hello! I need help to book a destination."
                         name=""
                         id=""
-                        class="border-[#F2CB04] border font-DM min-h-[120px] p-2 rounded-[15px]"
+                        class="border-[#F2CB04] border font-DM min-h-[120px] p-2 rounded-[15px] resize-none"
                      ></textarea>
 
-                     <button
-                        class="bg-[#F2E206] md:text-[20px]/[24px] text-[#010873] font-bold rounded-[15px] font-DM p-1"
+                     <a
+                        onclick="sendSubscribeForm('always-form')"
+                        class="bg-[#F2E206] md:text-[20px]/[24px] text-center text-[#010873] font-bold rounded-[15px] font-DM p-1"
                      >
-                        CONTACT ME
-                     </button>
+                        CONTACT US
+                     </a>
                   </form>
                </div>
             </div>
-         </section>
-
-         <section id="home-section" class="flex justify-center">
-            <div
-               class="flex sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:[1280px] 2xl:w-[1400px]"
-            ></div>
          </section>
       </main>
 
@@ -1236,7 +1293,7 @@
                   <span class="text-white font-Playfair text-3xl"
                      >{Name of the page}</span
                   >
-                  <span class="text-white font-DM">+44 113 357 1111</span>
+                  <span class="text-white font-DM">+44 870 888 8888</span>
                   <span class="text-[#F2CB04] font-DM"
                      >support@{domainofthepage}.com
                   </span>
@@ -1244,18 +1301,22 @@
                      >www.{domainofthepage}.com
                   </span>
                   <span class="font-light text-white font-DM">
-                     Park House, Park Square W, Leeds LS1 2PW, United
+                     Holden House, 57 Rathbone Pl, London W1T 1JU, United
                      Kingdom</span
                   >
                </div>
 
                <div class="flex flex-col justify-between gap-2 lg:w-[29%]">
-                  <span class="text-[#F2CB04] font-DM"
+                  <a href="./terms.html" class="text-[#F2CB04] font-DM"
                      >Terms & Conditions
-                  </span>
+                  </a>
                   <span class="text-[#F2CB04] font-DM">FAQs </span>
                   <span class="text-[#F2CB04] font-DM">Cookie Policy </span>
-                  <span class="text-[#F2CB04] font-DM">Privacy Notice</span>
+                  <span
+                     class="text-[#F2CB04] font-DM"
+                     onclick="clickModal('privacy-modal')"
+                     >Privacy Notice</span
+                  >
                   <span class="text-[#F2CB04] font-DM">Vouchers </span>
                   <span class="text-[#F2CB04] font-DM"
                      >Cookie Preferences
@@ -1263,51 +1324,77 @@
                </div>
 
                <div
-                  class="flex flex-wrap h-max justify-center lg:justify-between gap-5 [&>img]:w-[74px] [&>img]:h-[44px] lg:w-[25%]"
+                  class="flex flex-col lg:flex-row items-center justify-center gap-5 h-max"
                >
-                  <img
-                     src="images/logos/MasterCard_Logo.svg 1.png"
-                     alt="master-card-logo"
-                  />
-                  <img
-                     src="images/logos/MasterCard_Logo.svg 2.png"
-                     alt="maestro-logo"
-                  />
-                  <img
-                     src="images/logos/MasterCard_Logo.svg 3.png"
-                     alt="visa-logo"
-                  />
-                  <img
-                     src="images/logos/MasterCard_Logo.svg 4.png"
-                     alt="american-express-logo"
-                  />
-                  <img
-                     src="images/logos/MasterCard_Logo.svg 5.png"
-                     alt="google-pay-logo"
-                  />
-                  <img
-                     src="images/logos/MasterCard_Logo.svg 6.png"
-                     alt="apple-pay-logo"
-                  />
+                  <div class="[&>img]:w-[74px] lg:[&>img]:w-[115px]">
+                     <img src="images/logos/100.png" alt="" />
+                  </div>
+                  <div
+                     class="flex flex-wrap h-max justify-center lg:justify-between gap-5 [&>img]:w-[74px] [&>img]:h-[44px] lg:w-[50%]"
+                  >
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 1.png"
+                        alt="master-card-logo"
+                     />
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 2.png"
+                        alt="maestro-logo"
+                     />
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 3.png"
+                        alt="visa-logo"
+                     />
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 4.png"
+                        alt="american-express-logo"
+                     />
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 5.png"
+                        alt="google-pay-logo"
+                     />
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 6.png"
+                        alt="apple-pay-logo"
+                     />
+                  </div>
                </div>
             </div>
 
             <div class="bg-[#F2CB04] h-[1px] w-full"></div>
 
-            <div class="flex justify-between">
-               <div class="lg:w-[40%]">
+            <div
+               class="flex flex-col items-center lg:flex-row justify-between gap-10"
+            >
+               <div class="flex flex-col gap-5 lg:w-[40%]">
                   <span class="text-white lg:text-xl font-DM font-normal">
-                     © 2024 {nameofthepage}
+                     © 2024 All Rights Reserved <br />
+                     {nameofthepage}
                   </span>
+                  <div class="flex lg:justify-start justify-center">
+                     <img
+                        src="images/logos/MasterCard_Logo.svg 1.png"
+                        class="w-[50px] h-[50px]"
+                        alt=""
+                     />
+                  </div>
                </div>
                <div
-                  class="text-white lg:w-[70%] text-sm font-DM font-light text-right"
+                  class="text-white lg:w-[70%] text-sm font-DM font-light text-left lg:text-right"
                >
-                  This domain is operated by {name of the page}. Some hotels
-                  featured on our platform may contain sponsored content or
-                  promotional placements. We are committed to providing accurate
-                  and thorough evaluations of all hotels. By booking through our
-                  links, we may earn a commission at no additional cost to you.
+                  This site is run by {name of the page}. Some of the hotels
+                  showcased might include sponsored content or promotions. We
+                  promise to deliver honest and detailed reviews for all
+                  listings. If you book through our links, we might earn a
+                  commission, but it won’t cost you anything extra. <br />
+                  <br />
+                  Hey, big spender! Always play it smart. Set your limits, stick
+                  to your budget, and avoid draining your wallet. If it ever
+                  feels like the game is getting the better of you, get help
+                  immediately. Keep gambling fun and exciting! <br /><br />
+                  Your safety is our top concern! Our booking process is
+                  safeguarded with the latest technology, created by
+                  professionals, to ensure your information stays secure. You
+                  can trust us to protect you!
                </div>
             </div>
          </div>

@@ -3,6 +3,15 @@ body {
    scroll-behavior: smooth;
 }
 
+#home-section {
+   min-height: 700px;
+}
+@media (min-width: 1524px) {
+   #home-section {
+      height: calc(100vh);
+   }
+}
+
 .overflow::-webkit-scrollbar {
    width: 8px;
 }
@@ -72,7 +81,7 @@ body {
 
 .bg-form {
    position: relative;
-   background-image: url(/images/Rectangle\ 5.png);
+   background-image: url(/images/bform.png);
    background-repeat: no-repeat;
    background-size: cover;
    /* Combina el gradiente con la imagen */

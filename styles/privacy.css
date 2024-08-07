@@ -1,0 +1,31 @@
+html,
+body {
+   scroll-behavior: smooth;
+}
+
+.overflow::-webkit-scrollbar {
+   width: 8px;
+}
+
+.overflow::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+}
+
+.overflow::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+.priv-hero {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/images/hero_bg.png");
+
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+}
