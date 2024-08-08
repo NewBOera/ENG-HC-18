@@ -10,6 +10,7 @@ const swiper = new Swiper(".swiper", {
    sticky: false,
    momentumRatio: 2,
    momentumBounce: false,
+   centeredSlides: true,
 
    breakpoints: {
       // when window width is >= 320px
