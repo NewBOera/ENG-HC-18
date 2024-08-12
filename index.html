@@ -47,11 +47,17 @@
       <script defer src="./scripts/modals.js"></script>
       <script defer src="scripts/form_logic.js"></script>
       <script defer src="scripts/flag.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script defer src="scripts/date-hotel-selection.js"></script>
 
       <link rel="stylesheet" href="styles/notify.css" />
       <link rel="stylesheet" href="styles/globals.css" />
       <link rel="stylesheet" href="./styles/navbar.css" />
       <link rel="stylesheet" href="styles/flag.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      />
 
       <!-- ? Google Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -619,7 +625,7 @@
                   <form
                      id="contact-us-form"
                      action=""
-                     class="font-DM border w-full md:w-[405px] backdrop-blur-md border-[#F2E206] p-4 rounded-[20px] text-[14px]/[24px] md:text-[20px]/[24px] flex flex-col gap-4"
+                     class="font-DM border w-full md:w-[405px] lg:w-full backdrop-blur-md border-[#F2E206] p-4 rounded-[20px] text-[14px]/[24px] md:text-[20px]/[24px] flex flex-col gap-4"
                   >
                      <div class="flex bg-white/20 p-2 rounded-xl gap-3">
                         <label for="name" class="font-light text-white"
@@ -628,7 +634,7 @@
                         <input
                            type="text"
                            placeholder="Robert"
-                           class="bg-transparent grow"
+                           class="bg-transparent grow outline-none"
                            name="name"
                            id="name"
                         />
@@ -640,7 +646,7 @@
                         <input
                            type="text"
                            placeholder="Blacksmith"
-                           class="bg-transparent grow"
+                           class="bg-transparent grow outline-none"
                            name="lastname"
                            id="lastname"
                         />
@@ -652,7 +658,7 @@
                         <input
                            type="tel"
                            placeholder="+44 1332 810538"
-                           class="bg-transparent grow"
+                           class="bg-transparent grow outline-none"
                            name="phone"
                            id="phone"
                         />
@@ -664,7 +670,7 @@
                         <input
                            type="email"
                            placeholder="robert.bsmith@example.com"
-                           class="bg-transparent grow"
+                           class="bg-transparent grow outline-none"
                            name="email"
                            id="email"
                         />
@@ -680,12 +686,12 @@
                            />
                         </div>
                         <label for="guests" class="text-white"
-                           >Number of guests & rooms</label
+                           >Number of guests</label
                         >
                         <select
                            name="guests"
                            id="guests"
-                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl"
+                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl outline-none"
                         >
                            <option value="">1</option>
                            <option value="">2</option>
@@ -709,10 +715,45 @@
                               alt="icon"
                            />
                         </div>
-                        <label for="dates" class="text-white">Dates</label>
+                        <label for="guests" class="text-white"
+                           >Number of rooms</label
+                        >
+                        <select
+                           name="guests"
+                           id="guests"
+                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl outline-none"
+                        >
+                           <option value="">1</option>
+                           <option value="">2</option>
+                           <option value="">3</option>
+                           <option value="">4</option>
+                           <option value="">5</option>
+                           <option value="">6</option>
+                           <option value="">7</option>
+                           <option value="">8</option>
+                           <option value="">9</option>
+                           <option value="">10</option>
+                        </select>
+                     </div>
+
+                     <div
+                        class="flex justify-between items-center bg-white/20 p-2 rounded-xl gap-3"
+                     >
+                        <div>
+                           <img
+                              src="images/icon1.png"
+                              class="w-[15px] h-[18px]"
+                              alt="icon"
+                           />
+                        </div>
+                        <label class="text-white">Date</label>
                         <input
-                           type="date"
-                           class="bg-white/20 rounded-xl p-2 text-white"
+                           type="text"
+                           placeholder="Select your date"
+                           id="daterange2"
+                           name="daterange"
+                           class="w-[80%] bg-white/20 p-2 rounded-xl text-white outline-none"
+                           required
                         />
                      </div>
                      <div
@@ -729,7 +770,7 @@
                         <select
                            name="hotel"
                            id="hotels"
-                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl"
+                           class="[&>option]:bg-[#7a7a7a] bg-[#7a7a7a] text-white p-2 rounded-xl outline-none"
                         >
                            <option value="">Choose Hotel</option>
                            <option value="doubletree">DoubleTree</option>
@@ -780,7 +821,7 @@
                   </form>
                </div>
 
-               <div class="flex flex-col items-center gap-5 lg:w-[80%]">
+               <div class="flex flex-col items-center gap-5 lg:w-[64%]">
                   <h2
                      class="text-white text-[32px]/[32px] text-left lg:text-[55px]/[64px]"
                   >

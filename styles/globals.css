@@ -6,11 +6,6 @@ body {
 #home-section {
    min-height: 700px;
 }
-@media (min-width: 1524px) {
-   #home-section {
-      height: calc(100vh);
-   }
-}
 
 .overflow::-webkit-scrollbar {
    width: 8px;
